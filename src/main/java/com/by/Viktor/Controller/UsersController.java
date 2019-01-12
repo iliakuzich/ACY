@@ -21,6 +21,7 @@ public class UsersController {
     @Autowired
     UserRepository userRepository;
 
+    //я так понял это флаг, который обозначает нужно ли проверять по роли. Такие штуки обычно выносятся в проперти
     private static boolean role = false;
 
     @GetMapping
