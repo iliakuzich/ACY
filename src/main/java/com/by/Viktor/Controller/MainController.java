@@ -25,6 +25,7 @@ public class MainController {
     }
 
     @PostMapping
+    //лучще упаковать в один объект и передавать в теле запроса. Или в крайнем случае использовать @BeanParam
     public void add(@RequestParam String name, @RequestParam String email,
                     @RequestParam String numberPhone, @RequestParam String themeQwest,
                     @RequestParam String qwest, Map<String, Object> model) {
